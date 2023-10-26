@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div>
+        {% for subject in subjects %}
+            <div class="text-blue-500 text-2xl p-4 pl-12 m-2 bg-[#FFC55C] rounded-xl">
+                <a href="{{subject}}">
+                  {{subject}}  
+                </a>       
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
